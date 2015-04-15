@@ -8,9 +8,13 @@ body {
   width: 100%;
   font-family: sans-serif;
   background-image: url('http://addyosmani.com/blog/wp-content/uploads/2013/04/unicorn.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: fixed;
 }
 
 .main-container {
+  height: 100%;
   width: 75%;
   margin: 10px auto;
   background: rgba(255, 255, 255, 0.86);
@@ -27,8 +31,20 @@ body {
   width: 40%;
 }
 
+.text-box:focus {
+  outline: none;
+}
+
 p{
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+}
+
+html *{
+  overflow: auto;
+}
+
+.form-control, h1{
+  position: relative;
 }
